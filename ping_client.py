@@ -26,7 +26,7 @@ def sendPing():
   # Receive response from server
   message=s.recv(1024)
   print(message)
-  connection.close()
+  s.close()
 
 # Driver function
 if __name__ == '__main__':
