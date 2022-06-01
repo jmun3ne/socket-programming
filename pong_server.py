@@ -19,11 +19,11 @@ def sendPong():
     print('Socket connected to ', address)
 
     # receive message sent by client
-    message =connection.recv(1024).decode()
-    print(message)
+    msg =connection.recv(1024).decode()
+    print(msg)
     
     # check if message sent is 'ping' or not
-    if message =='ping':
+    if msg=='ping':
     # respond to the client with Pong if true
      connection.send(str('Pong').encode())
     # close connection with client
