@@ -9,7 +9,7 @@ def sendMessage():
 
   # connect to server on a local machine
   s.connect(('127.0.0.1',port))
-  print("Client successfully connected to server: " +" \n")
+  print("Client successfully connected to server:")
   
   # prompt user to send message
   message =input("Enter your message")
