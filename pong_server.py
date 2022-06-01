@@ -27,7 +27,7 @@ def initiatePongServer():
     connection, address=s.accept()
     print('Socket connected to ', address)
     message =connection.recv(1024)
-    print(message)
+    print(message).decode()
     # Respond the client with Pong
     connection.send(str('Pong').encode())
 
