@@ -1,6 +1,6 @@
 import socket
 
-# function to send ping request
+# function to send ping message
 def sendMessage():
   s=socket.socket() #create socket
 
