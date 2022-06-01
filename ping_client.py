@@ -24,7 +24,7 @@ def sendPing():
   s.send(str("ping").encode())
 
   # Receive response from server
-  message=s.recv(1024)
+  message=s.recv(1024).decode()
   print(message)
   s.close()
 
