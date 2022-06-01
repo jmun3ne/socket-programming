@@ -1,7 +1,7 @@
 import socket
 
 # function to send ping message
-def sendMessage():
+def sendMsg():
   s=socket.socket() #create socket
 
   # server port to send messages to
@@ -12,11 +12,11 @@ def sendMessage():
   print("Client successfully connected to server")
   
   # prompt user to send message
-  message=input("Enter your message")
-  s.send(message.encode())
+  msg=input("Enter your message")
+  s.send(msg.encode())
 
   # receive response from server
-  message=s.recv(1024).decode()
+  msg=s.recv(1024).decode()
   print(message)
   s.close()
 
@@ -24,4 +24,4 @@ def sendMessage():
 if __name__ == '__main__':
 
   # trigger client
-  sendMessage()
+  sendMsg()
