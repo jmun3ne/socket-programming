@@ -17,7 +17,7 @@ def sendMsg():
 
   # receive response from server
   msg=s.recv(1024).decode()
-  print(message)
+  print(msg)
   s.close()
 
 # driver function
