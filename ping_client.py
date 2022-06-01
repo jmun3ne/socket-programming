@@ -20,7 +20,7 @@ def sendMessage():
   print(message)
   s.close()
 
-# Driver function
+# driver function
 if __name__ == '__main__':
 
   # trigger client
