@@ -4,17 +4,17 @@ def sendPong():
   s=socket.socket() #create socket
   print("Socket succcesfully created")
 
-  #Server port
+  # bind server to port
   port = 7000
   s.bind(('',port))
 
-  #Start listening to requests
+  # start listening to requests
   s.listen(5)
   print("Socket is listening....")
 
-  # Pong server running forever
+  # pong server running forever
   while True:
-    #Establish connection with client
+    # establish connection with client
     connection, address=s.accept()
     print('Socket connected to ', address)
 
