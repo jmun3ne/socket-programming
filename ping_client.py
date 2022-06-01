@@ -18,10 +18,11 @@ def sendPing():
 
   #connect to server on a local machine
   s.connect(('127.0.0.1',port))
-  print("Client successfully connected to server")
+  print("Client successfully connected to server: " +" \n")
   
   #send ping message
-  s.send(str("ping").encode())
+  message =input("Enter your message")
+  s.send(message.encode())
 
   # Receive response from server
   message=s.recv(1024).decode()

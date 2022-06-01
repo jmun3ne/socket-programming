@@ -26,14 +26,19 @@ def initiatePongServer():
     #Establish connection with client
     connection, address=s.accept()
     print('Socket connected to ', address)
+<<<<<<< HEAD
     message =connection.recv(1024)
     print(message).decode()
+=======
+    message =connection.recv(1024).decode()
+    if message=='ping':
+>>>>>>> cf90280 (Read user data)
     # Respond the client with Pong
-    connection.send(str('Pong').encode())
-
+     connection.send(str('Pong').encode())
     #Close connection with client
-    connection.close()
-
+     connection.close()
+    else:
+     connection.close()
 # driver function
 if __name__ == '__main__':
 
