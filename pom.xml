@@ -11,4 +11,5 @@
         <maven.compiler.target>11</maven.compiler.target>
         <exec.mainClass>com.munene.crawler.Crawler</exec.mainClass>
     </properties>
+    <name>lowercase_to_uppercase</name>
 </project>
